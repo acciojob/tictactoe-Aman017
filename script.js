@@ -23,6 +23,7 @@
                 const cellDiv = document.createElement("div");
                 cellDiv.classList.add("cell");
                 cellDiv.id = index;
+                cellDiv.setAttribute("data-cy", `cell-${index}`);
                 cellDiv.innerText = cell;
                 cellDiv.addEventListener("click", handleMove);
                 board.appendChild(cellDiv);
